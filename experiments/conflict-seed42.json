@@ -1,0 +1,3620 @@
+{
+  "id": "4fcd3b9f-1247-480b-b46a-bb7c74a13862",
+  "config": {
+    "seed": 42,
+    "trials": 5,
+    "scenario": "conflict"
+  },
+  "results": [
+    {
+      "trial": 0,
+      "controller": "A \u00b7 static",
+      "prompt": "Navigate to Station D",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 15.35,
+        "distance": 15.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.032
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          4,
+          12
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          6,
+          12
+        ],
+        [
+          7,
+          12
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          13,
+          12
+        ],
+        [
+          14,
+          12
+        ],
+        [
+          15,
+          12
+        ],
+        [
+          16,
+          12
+        ],
+        [
+          17,
+          12
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.449933+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.449935+00:00",
+          "kind": "grounding",
+          "message": "1 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.449967+00:00",
+          "kind": "contradiction",
+          "message": "Current blocked sensor observations override stale clear records; unresolved conflicts remain blocked.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.450035+00:00",
+          "kind": "planning",
+          "message": "Route to D: 15 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.450037+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.450040+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 15.35,
+          "timestamp": "2026-10-26T21:49:21.451082+00:00",
+          "kind": "navigate",
+          "message": "Navigate at D",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 15.35,
+          "timestamp": "2026-10-26T21:49:21.451089+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            17.0,
+            12.0
+          ]
+        }
+      ],
+      "obstacles": [
+        [
+          9,
+          8
+        ]
+      ],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 0,
+      "controller": "B \u00b7 reactive",
+      "prompt": "Navigate to Station D",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 15.35,
+        "distance": 15.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.034
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          4,
+          12
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          6,
+          12
+        ],
+        [
+          7,
+          12
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          13,
+          12
+        ],
+        [
+          14,
+          12
+        ],
+        [
+          15,
+          12
+        ],
+        [
+          16,
+          12
+        ],
+        [
+          17,
+          12
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.451133+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.451137+00:00",
+          "kind": "grounding",
+          "message": "1 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.451170+00:00",
+          "kind": "contradiction",
+          "message": "Current blocked sensor observations override stale clear records; unresolved conflicts remain blocked.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.451243+00:00",
+          "kind": "planning",
+          "message": "Route to D: 15 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.451246+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.451255+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 15.35,
+          "timestamp": "2026-10-26T21:49:21.451905+00:00",
+          "kind": "navigate",
+          "message": "Navigate at D",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 15.35,
+          "timestamp": "2026-10-26T21:49:21.451909+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            17.0,
+            12.0
+          ]
+        }
+      ],
+      "obstacles": [
+        [
+          9,
+          8
+        ]
+      ],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 0,
+      "controller": "PRAXIS",
+      "prompt": "Navigate to Station D",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 15.35,
+        "distance": 15.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.033
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          4,
+          12
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          6,
+          12
+        ],
+        [
+          7,
+          12
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          13,
+          12
+        ],
+        [
+          14,
+          12
+        ],
+        [
+          15,
+          12
+        ],
+        [
+          16,
+          12
+        ],
+        [
+          17,
+          12
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.451940+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.451942+00:00",
+          "kind": "grounding",
+          "message": "1 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.451970+00:00",
+          "kind": "contradiction",
+          "message": "Current blocked sensor observations override stale clear records; unresolved conflicts remain blocked.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.452040+00:00",
+          "kind": "planning",
+          "message": "Route to D: 15 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.452042+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.452047+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 15.35,
+          "timestamp": "2026-10-26T21:49:21.452656+00:00",
+          "kind": "navigate",
+          "message": "Navigate at D",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 15.35,
+          "timestamp": "2026-10-26T21:49:21.452661+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            17.0,
+            12.0
+          ]
+        }
+      ],
+      "obstacles": [
+        [
+          9,
+          8
+        ]
+      ],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 0,
+      "controller": "PRAXIS \u00b7 candidate v2",
+      "prompt": "Navigate to Station D",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 14.7,
+        "distance": 15.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.033
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          4,
+          12
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          6,
+          12
+        ],
+        [
+          7,
+          12
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          13,
+          12
+        ],
+        [
+          14,
+          12
+        ],
+        [
+          15,
+          12
+        ],
+        [
+          16,
+          12
+        ],
+        [
+          17,
+          12
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.452687+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.452689+00:00",
+          "kind": "grounding",
+          "message": "1 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.452716+00:00",
+          "kind": "contradiction",
+          "message": "Current blocked sensor observations override stale clear records; unresolved conflicts remain blocked.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.452785+00:00",
+          "kind": "planning",
+          "message": "Route to D: 15 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.452787+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.452791+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 14.7,
+          "timestamp": "2026-10-26T21:49:21.453402+00:00",
+          "kind": "navigate",
+          "message": "Navigate at D",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 14.7,
+          "timestamp": "2026-10-26T21:49:21.453406+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            17.0,
+            12.0
+          ]
+        }
+      ],
+      "obstacles": [
+        [
+          9,
+          8
+        ]
+      ],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 1,
+      "controller": "A \u00b7 static",
+      "prompt": "Navigate to Station B",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 10.25,
+        "distance": 10.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.024
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.453580+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.453582+00:00",
+          "kind": "grounding",
+          "message": "1 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.453603+00:00",
+          "kind": "contradiction",
+          "message": "Current blocked sensor observations override stale clear records; unresolved conflicts remain blocked.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.453652+00:00",
+          "kind": "planning",
+          "message": "Route to B: 10 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.453654+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.453659+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 10.25,
+          "timestamp": "2026-10-26T21:49:21.454338+00:00",
+          "kind": "navigate",
+          "message": "Navigate at B",
+          "position": [
+            2.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 10.25,
+          "timestamp": "2026-10-26T21:49:21.454344+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            2.0,
+            2.0
+          ]
+        }
+      ],
+      "obstacles": [
+        [
+          9,
+          8
+        ]
+      ],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 1,
+      "controller": "B \u00b7 reactive",
+      "prompt": "Navigate to Station B",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 10.25,
+        "distance": 10.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.031
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.454389+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.454393+00:00",
+          "kind": "grounding",
+          "message": "1 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.454429+00:00",
+          "kind": "contradiction",
+          "message": "Current blocked sensor observations override stale clear records; unresolved conflicts remain blocked.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.454501+00:00",
+          "kind": "planning",
+          "message": "Route to B: 10 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.454503+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.454508+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 10.25,
+          "timestamp": "2026-10-26T21:49:21.454894+00:00",
+          "kind": "navigate",
+          "message": "Navigate at B",
+          "position": [
+            2.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 10.25,
+          "timestamp": "2026-10-26T21:49:21.454898+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            2.0,
+            2.0
+          ]
+        }
+      ],
+      "obstacles": [
+        [
+          9,
+          8
+        ]
+      ],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 1,
+      "controller": "PRAXIS",
+      "prompt": "Navigate to Station B",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 10.25,
+        "distance": 10.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.054
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.454925+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.454927+00:00",
+          "kind": "grounding",
+          "message": "1 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.454952+00:00",
+          "kind": "contradiction",
+          "message": "Current blocked sensor observations override stale clear records; unresolved conflicts remain blocked.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.455034+00:00",
+          "kind": "planning",
+          "message": "Route to B: 10 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.455037+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.455041+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 10.25,
+          "timestamp": "2026-10-26T21:49:21.455397+00:00",
+          "kind": "navigate",
+          "message": "Navigate at B",
+          "position": [
+            2.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 10.25,
+          "timestamp": "2026-10-26T21:49:21.455400+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            2.0,
+            2.0
+          ]
+        }
+      ],
+      "obstacles": [
+        [
+          9,
+          8
+        ]
+      ],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 1,
+      "controller": "PRAXIS \u00b7 candidate v2",
+      "prompt": "Navigate to Station B",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 9.95,
+        "distance": 10.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.025
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.455423+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.455425+00:00",
+          "kind": "grounding",
+          "message": "1 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.455448+00:00",
+          "kind": "contradiction",
+          "message": "Current blocked sensor observations override stale clear records; unresolved conflicts remain blocked.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.455500+00:00",
+          "kind": "planning",
+          "message": "Route to B: 10 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.455502+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.455505+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 9.95,
+          "timestamp": "2026-10-26T21:49:21.456380+00:00",
+          "kind": "navigate",
+          "message": "Navigate at B",
+          "position": [
+            2.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 9.95,
+          "timestamp": "2026-10-26T21:49:21.456386+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            2.0,
+            2.0
+          ]
+        }
+      ],
+      "obstacles": [
+        [
+          9,
+          8
+        ]
+      ],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 2,
+      "controller": "A \u00b7 static",
+      "prompt": "Navigate to Station B",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 10.25,
+        "distance": 10.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.025
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.456657+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.456660+00:00",
+          "kind": "grounding",
+          "message": "1 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.456689+00:00",
+          "kind": "contradiction",
+          "message": "Current blocked sensor observations override stale clear records; unresolved conflicts remain blocked.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.456738+00:00",
+          "kind": "planning",
+          "message": "Route to B: 10 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.456741+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.456746+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 10.25,
+          "timestamp": "2026-10-26T21:49:21.457144+00:00",
+          "kind": "navigate",
+          "message": "Navigate at B",
+          "position": [
+            2.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 10.25,
+          "timestamp": "2026-10-26T21:49:21.457148+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            2.0,
+            2.0
+          ]
+        }
+      ],
+      "obstacles": [
+        [
+          9,
+          8
+        ]
+      ],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 2,
+      "controller": "B \u00b7 reactive",
+      "prompt": "Navigate to Station B",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 10.25,
+        "distance": 10.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.025
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.457175+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.457178+00:00",
+          "kind": "grounding",
+          "message": "1 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.457204+00:00",
+          "kind": "contradiction",
+          "message": "Current blocked sensor observations override stale clear records; unresolved conflicts remain blocked.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.457257+00:00",
+          "kind": "planning",
+          "message": "Route to B: 10 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.457260+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.457264+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 10.25,
+          "timestamp": "2026-10-26T21:49:21.457643+00:00",
+          "kind": "navigate",
+          "message": "Navigate at B",
+          "position": [
+            2.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 10.25,
+          "timestamp": "2026-10-26T21:49:21.457647+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            2.0,
+            2.0
+          ]
+        }
+      ],
+      "obstacles": [
+        [
+          9,
+          8
+        ]
+      ],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 2,
+      "controller": "PRAXIS",
+      "prompt": "Navigate to Station B",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 10.25,
+        "distance": 10.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.025
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.457673+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.457675+00:00",
+          "kind": "grounding",
+          "message": "1 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.457699+00:00",
+          "kind": "contradiction",
+          "message": "Current blocked sensor observations override stale clear records; unresolved conflicts remain blocked.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.457750+00:00",
+          "kind": "planning",
+          "message": "Route to B: 10 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.457753+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.457756+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 10.25,
+          "timestamp": "2026-10-26T21:49:21.458131+00:00",
+          "kind": "navigate",
+          "message": "Navigate at B",
+          "position": [
+            2.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 10.25,
+          "timestamp": "2026-10-26T21:49:21.458135+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            2.0,
+            2.0
+          ]
+        }
+      ],
+      "obstacles": [
+        [
+          9,
+          8
+        ]
+      ],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 2,
+      "controller": "PRAXIS \u00b7 candidate v2",
+      "prompt": "Navigate to Station B",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 9.95,
+        "distance": 10.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.274
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.458159+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.458161+00:00",
+          "kind": "grounding",
+          "message": "1 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.458184+00:00",
+          "kind": "contradiction",
+          "message": "Current blocked sensor observations override stale clear records; unresolved conflicts remain blocked.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.458483+00:00",
+          "kind": "planning",
+          "message": "Route to B: 10 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.458487+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.458492+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 9.95,
+          "timestamp": "2026-10-26T21:49:21.458925+00:00",
+          "kind": "navigate",
+          "message": "Navigate at B",
+          "position": [
+            2.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 9.95,
+          "timestamp": "2026-10-26T21:49:21.458930+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            2.0,
+            2.0
+          ]
+        }
+      ],
+      "obstacles": [
+        [
+          9,
+          8
+        ]
+      ],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 3,
+      "controller": "A \u00b7 static",
+      "prompt": "Navigate to Station D",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 15.35,
+        "distance": 15.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.106
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          4,
+          12
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          6,
+          12
+        ],
+        [
+          7,
+          12
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          13,
+          12
+        ],
+        [
+          14,
+          12
+        ],
+        [
+          15,
+          12
+        ],
+        [
+          16,
+          12
+        ],
+        [
+          17,
+          12
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.459374+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.459376+00:00",
+          "kind": "grounding",
+          "message": "1 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.459402+00:00",
+          "kind": "contradiction",
+          "message": "Current blocked sensor observations override stale clear records; unresolved conflicts remain blocked.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.459545+00:00",
+          "kind": "planning",
+          "message": "Route to D: 15 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.459548+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.459553+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 15.35,
+          "timestamp": "2026-10-26T21:49:21.460132+00:00",
+          "kind": "navigate",
+          "message": "Navigate at D",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 15.35,
+          "timestamp": "2026-10-26T21:49:21.460136+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            17.0,
+            12.0
+          ]
+        }
+      ],
+      "obstacles": [
+        [
+          9,
+          8
+        ]
+      ],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 3,
+      "controller": "B \u00b7 reactive",
+      "prompt": "Navigate to Station D",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 15.35,
+        "distance": 15.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.033
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          4,
+          12
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          6,
+          12
+        ],
+        [
+          7,
+          12
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          13,
+          12
+        ],
+        [
+          14,
+          12
+        ],
+        [
+          15,
+          12
+        ],
+        [
+          16,
+          12
+        ],
+        [
+          17,
+          12
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.460165+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.460167+00:00",
+          "kind": "grounding",
+          "message": "1 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.460192+00:00",
+          "kind": "contradiction",
+          "message": "Current blocked sensor observations override stale clear records; unresolved conflicts remain blocked.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.460260+00:00",
+          "kind": "planning",
+          "message": "Route to D: 15 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.460263+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.460267+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 15.35,
+          "timestamp": "2026-10-26T21:49:21.460796+00:00",
+          "kind": "navigate",
+          "message": "Navigate at D",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 15.35,
+          "timestamp": "2026-10-26T21:49:21.460799+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            17.0,
+            12.0
+          ]
+        }
+      ],
+      "obstacles": [
+        [
+          9,
+          8
+        ]
+      ],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 3,
+      "controller": "PRAXIS",
+      "prompt": "Navigate to Station D",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 15.35,
+        "distance": 15.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.034
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          4,
+          12
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          6,
+          12
+        ],
+        [
+          7,
+          12
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          13,
+          12
+        ],
+        [
+          14,
+          12
+        ],
+        [
+          15,
+          12
+        ],
+        [
+          16,
+          12
+        ],
+        [
+          17,
+          12
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.460821+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.460823+00:00",
+          "kind": "grounding",
+          "message": "1 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.460845+00:00",
+          "kind": "contradiction",
+          "message": "Current blocked sensor observations override stale clear records; unresolved conflicts remain blocked.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.460932+00:00",
+          "kind": "planning",
+          "message": "Route to D: 15 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.460935+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.460938+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 15.35,
+          "timestamp": "2026-10-26T21:49:21.461554+00:00",
+          "kind": "navigate",
+          "message": "Navigate at D",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 15.35,
+          "timestamp": "2026-10-26T21:49:21.461559+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            17.0,
+            12.0
+          ]
+        }
+      ],
+      "obstacles": [
+        [
+          9,
+          8
+        ]
+      ],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 3,
+      "controller": "PRAXIS \u00b7 candidate v2",
+      "prompt": "Navigate to Station D",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 14.7,
+        "distance": 15.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.034
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          4,
+          12
+        ],
+        [
+          5,
+          12
+        ],
+        [
+          6,
+          12
+        ],
+        [
+          7,
+          12
+        ],
+        [
+          8,
+          12
+        ],
+        [
+          9,
+          12
+        ],
+        [
+          10,
+          12
+        ],
+        [
+          11,
+          12
+        ],
+        [
+          12,
+          12
+        ],
+        [
+          13,
+          12
+        ],
+        [
+          14,
+          12
+        ],
+        [
+          15,
+          12
+        ],
+        [
+          16,
+          12
+        ],
+        [
+          17,
+          12
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.461586+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.461589+00:00",
+          "kind": "grounding",
+          "message": "1 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.461616+00:00",
+          "kind": "contradiction",
+          "message": "Current blocked sensor observations override stale clear records; unresolved conflicts remain blocked.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.461688+00:00",
+          "kind": "planning",
+          "message": "Route to D: 15 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.461690+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.461694+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 14.7,
+          "timestamp": "2026-10-26T21:49:21.462228+00:00",
+          "kind": "navigate",
+          "message": "Navigate at D",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 14.7,
+          "timestamp": "2026-10-26T21:49:21.462231+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            17.0,
+            12.0
+          ]
+        }
+      ],
+      "obstacles": [
+        [
+          9,
+          8
+        ]
+      ],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 4,
+      "controller": "A \u00b7 static",
+      "prompt": "Navigate to Station C",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 25.75,
+        "distance": 25.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.223
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          14,
+          2
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          16,
+          2
+        ],
+        [
+          17,
+          2
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.462741+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.462743+00:00",
+          "kind": "grounding",
+          "message": "1 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.462765+00:00",
+          "kind": "contradiction",
+          "message": "Current blocked sensor observations override stale clear records; unresolved conflicts remain blocked.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.463204+00:00",
+          "kind": "planning",
+          "message": "Route to C: 25 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.463208+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.463213+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 25.75,
+          "timestamp": "2026-10-26T21:49:21.464303+00:00",
+          "kind": "navigate",
+          "message": "Navigate at C",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 25.75,
+          "timestamp": "2026-10-26T21:49:21.464309+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            17.0,
+            2.0
+          ]
+        }
+      ],
+      "obstacles": [
+        [
+          9,
+          8
+        ]
+      ],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 4,
+      "controller": "B \u00b7 reactive",
+      "prompt": "Navigate to Station C",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 25.75,
+        "distance": 25.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.274
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          14,
+          2
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          16,
+          2
+        ],
+        [
+          17,
+          2
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.464344+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.464346+00:00",
+          "kind": "grounding",
+          "message": "1 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.464375+00:00",
+          "kind": "contradiction",
+          "message": "Current blocked sensor observations override stale clear records; unresolved conflicts remain blocked.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.464850+00:00",
+          "kind": "planning",
+          "message": "Route to C: 25 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.464854+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.464884+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 25.75,
+          "timestamp": "2026-10-26T21:49:21.465818+00:00",
+          "kind": "navigate",
+          "message": "Navigate at C",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 25.75,
+          "timestamp": "2026-10-26T21:49:21.465822+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            17.0,
+            2.0
+          ]
+        }
+      ],
+      "obstacles": [
+        [
+          9,
+          8
+        ]
+      ],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 4,
+      "controller": "PRAXIS",
+      "prompt": "Navigate to Station C",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 25.75,
+        "distance": 25.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.195
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          14,
+          2
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          16,
+          2
+        ],
+        [
+          17,
+          2
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.465973+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.465977+00:00",
+          "kind": "grounding",
+          "message": "1 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.466010+00:00",
+          "kind": "contradiction",
+          "message": "Current blocked sensor observations override stale clear records; unresolved conflicts remain blocked.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.466404+00:00",
+          "kind": "planning",
+          "message": "Route to C: 25 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.466407+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.466411+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 25.75,
+          "timestamp": "2026-10-26T21:49:21.467331+00:00",
+          "kind": "navigate",
+          "message": "Navigate at C",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 25.75,
+          "timestamp": "2026-10-26T21:49:21.467335+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            17.0,
+            2.0
+          ]
+        }
+      ],
+      "obstacles": [
+        [
+          9,
+          8
+        ]
+      ],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 4,
+      "controller": "PRAXIS \u00b7 candidate v2",
+      "prompt": "Navigate to Station C",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 24.2,
+        "distance": 25.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.24
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          14,
+          2
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          16,
+          2
+        ],
+        [
+          17,
+          2
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.467364+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.467367+00:00",
+          "kind": "grounding",
+          "message": "1 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.467396+00:00",
+          "kind": "contradiction",
+          "message": "Current blocked sensor observations override stale clear records; unresolved conflicts remain blocked.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.467934+00:00",
+          "kind": "planning",
+          "message": "Route to C: 25 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.467939+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.467944+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 24.2,
+          "timestamp": "2026-10-26T21:49:21.469515+00:00",
+          "kind": "navigate",
+          "message": "Navigate at C",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 24.2,
+          "timestamp": "2026-10-26T21:49:21.469524+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            17.0,
+            2.0
+          ]
+        }
+      ],
+      "obstacles": [
+        [
+          9,
+          8
+        ]
+      ],
+      "memory_reuses": 0
+    }
+  ],
+  "summary": [
+    {
+      "controller": "A \u00b7 static",
+      "success_rate": 1,
+      "time": 15.39,
+      "distance": 15.0,
+      "replans": 0,
+      "collisions": 0,
+      "prevented": 0,
+      "decision_ms": 0.082,
+      "memory_reuses": 0
+    },
+    {
+      "controller": "B \u00b7 reactive",
+      "success_rate": 1,
+      "time": 15.39,
+      "distance": 15.0,
+      "replans": 0,
+      "collisions": 0,
+      "prevented": 0,
+      "decision_ms": 0.079,
+      "memory_reuses": 0
+    },
+    {
+      "controller": "PRAXIS",
+      "success_rate": 1,
+      "time": 15.39,
+      "distance": 15.0,
+      "replans": 0,
+      "collisions": 0,
+      "prevented": 0,
+      "decision_ms": 0.068,
+      "memory_reuses": 0
+    },
+    {
+      "controller": "PRAXIS \u00b7 candidate v2",
+      "success_rate": 1,
+      "time": 14.7,
+      "distance": 15.0,
+      "replans": 0,
+      "collisions": 0,
+      "prevented": 0,
+      "decision_ms": 0.121,
+      "memory_reuses": 0
+    }
+  ],
+  "candidate_retained": true,
+  "retention_reason": "Retain only if all trials verify, zero collisions, no success regression and lower mean simulation time.",
+  "wall_ms": 20.37,
+  "scope": "Synthetic kinematic warehouse trials; not ASPIRE or real robot benchmarks."
+}

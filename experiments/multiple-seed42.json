@@ -1,0 +1,6440 @@
+{
+  "id": "b8c35a6b-a46e-451b-a2ea-7019ee477478",
+  "config": {
+    "seed": 42,
+    "trials": 5,
+    "scenario": "multiple"
+  },
+  "results": [
+    {
+      "trial": 0,
+      "controller": "A \u00b7 static",
+      "prompt": "Deliver two packages from Station A to Station C and Station D",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 37.85,
+        "distance": 35.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.305
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          14,
+          2
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          16,
+          2
+        ],
+        [
+          17,
+          2
+        ],
+        [
+          17,
+          3
+        ],
+        [
+          17,
+          4
+        ],
+        [
+          17,
+          5
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          17,
+          7
+        ],
+        [
+          17,
+          8
+        ],
+        [
+          17,
+          9
+        ],
+        [
+          17,
+          10
+        ],
+        [
+          17,
+          11
+        ],
+        [
+          17,
+          12
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.493383+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.493385+00:00",
+          "kind": "grounding",
+          "message": "6 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.493626+00:00",
+          "kind": "planning",
+          "message": "Route to A: 0 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.493628+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.493630+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.05,
+          "timestamp": "2026-10-26T21:49:21.493635+00:00",
+          "kind": "navigate",
+          "message": "Navigate at A",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.493646+00:00",
+          "kind": "pickup",
+          "message": "Pickup at A \u00b7 2 package(s)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.493849+00:00",
+          "kind": "planning",
+          "message": "Route to C: 25 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 8,
+          "time": 26.4,
+          "timestamp": "2026-10-26T21:49:21.494823+00:00",
+          "kind": "navigate",
+          "message": "Navigate at C",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 9,
+          "time": 27.0,
+          "timestamp": "2026-10-26T21:49:21.494834+00:00",
+          "kind": "deliver",
+          "message": "Deliver at C \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 10,
+          "time": 27.0,
+          "timestamp": "2026-10-26T21:49:21.494929+00:00",
+          "kind": "planning",
+          "message": "Route to D: 10 cells; A* with mandatory restricted zones",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 11,
+          "time": 37.25,
+          "timestamp": "2026-10-26T21:49:21.495294+00:00",
+          "kind": "navigate",
+          "message": "Navigate at D",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 12,
+          "time": 37.85,
+          "timestamp": "2026-10-26T21:49:21.495304+00:00",
+          "kind": "deliver",
+          "message": "Deliver at D \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 13,
+          "time": 37.85,
+          "timestamp": "2026-10-26T21:49:21.495309+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            17.0,
+            12.0
+          ]
+        }
+      ],
+      "obstacles": [],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 0,
+      "controller": "B \u00b7 reactive",
+      "prompt": "Deliver two packages from Station A to Station C and Station D",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 37.85,
+        "distance": 35.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.224
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          14,
+          2
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          16,
+          2
+        ],
+        [
+          17,
+          2
+        ],
+        [
+          17,
+          3
+        ],
+        [
+          17,
+          4
+        ],
+        [
+          17,
+          5
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          17,
+          7
+        ],
+        [
+          17,
+          8
+        ],
+        [
+          17,
+          9
+        ],
+        [
+          17,
+          10
+        ],
+        [
+          17,
+          11
+        ],
+        [
+          17,
+          12
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.495347+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.495350+00:00",
+          "kind": "grounding",
+          "message": "6 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.495580+00:00",
+          "kind": "planning",
+          "message": "Route to A: 0 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.495582+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.495586+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.05,
+          "timestamp": "2026-10-26T21:49:21.495590+00:00",
+          "kind": "navigate",
+          "message": "Navigate at A",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.495597+00:00",
+          "kind": "pickup",
+          "message": "Pickup at A \u00b7 2 package(s)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.495785+00:00",
+          "kind": "planning",
+          "message": "Route to C: 25 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 8,
+          "time": 26.4,
+          "timestamp": "2026-10-26T21:49:21.496726+00:00",
+          "kind": "navigate",
+          "message": "Navigate at C",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 9,
+          "time": 27.0,
+          "timestamp": "2026-10-26T21:49:21.496734+00:00",
+          "kind": "deliver",
+          "message": "Deliver at C \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 10,
+          "time": 27.0,
+          "timestamp": "2026-10-26T21:49:21.496763+00:00",
+          "kind": "planning",
+          "message": "Route to D: 10 cells; A* with mandatory restricted zones",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 11,
+          "time": 37.25,
+          "timestamp": "2026-10-26T21:49:21.497131+00:00",
+          "kind": "navigate",
+          "message": "Navigate at D",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 12,
+          "time": 37.85,
+          "timestamp": "2026-10-26T21:49:21.497138+00:00",
+          "kind": "deliver",
+          "message": "Deliver at D \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 13,
+          "time": 37.85,
+          "timestamp": "2026-10-26T21:49:21.497141+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            17.0,
+            12.0
+          ]
+        }
+      ],
+      "obstacles": [],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 0,
+      "controller": "PRAXIS",
+      "prompt": "Deliver two packages from Station A to Station C and Station D",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 37.85,
+        "distance": 35.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.265
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          14,
+          2
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          16,
+          2
+        ],
+        [
+          17,
+          2
+        ],
+        [
+          17,
+          3
+        ],
+        [
+          17,
+          4
+        ],
+        [
+          17,
+          5
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          17,
+          7
+        ],
+        [
+          17,
+          8
+        ],
+        [
+          17,
+          9
+        ],
+        [
+          17,
+          10
+        ],
+        [
+          17,
+          11
+        ],
+        [
+          17,
+          12
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.497170+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.497172+00:00",
+          "kind": "grounding",
+          "message": "6 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.497396+00:00",
+          "kind": "planning",
+          "message": "Route to A: 0 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.497398+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.497402+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.05,
+          "timestamp": "2026-10-26T21:49:21.497405+00:00",
+          "kind": "navigate",
+          "message": "Navigate at A",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.497411+00:00",
+          "kind": "pickup",
+          "message": "Pickup at A \u00b7 2 package(s)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.497641+00:00",
+          "kind": "planning",
+          "message": "Route to C: 25 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 8,
+          "time": 26.4,
+          "timestamp": "2026-10-26T21:49:21.498509+00:00",
+          "kind": "navigate",
+          "message": "Navigate at C",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 9,
+          "time": 27.0,
+          "timestamp": "2026-10-26T21:49:21.498517+00:00",
+          "kind": "deliver",
+          "message": "Deliver at C \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 10,
+          "time": 27.0,
+          "timestamp": "2026-10-26T21:49:21.498545+00:00",
+          "kind": "planning",
+          "message": "Route to D: 10 cells; A* with mandatory restricted zones",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 11,
+          "time": 37.25,
+          "timestamp": "2026-10-26T21:49:21.499559+00:00",
+          "kind": "navigate",
+          "message": "Navigate at D",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 12,
+          "time": 37.85,
+          "timestamp": "2026-10-26T21:49:21.499573+00:00",
+          "kind": "deliver",
+          "message": "Deliver at D \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 13,
+          "time": 37.85,
+          "timestamp": "2026-10-26T21:49:21.499578+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            17.0,
+            12.0
+          ]
+        }
+      ],
+      "obstacles": [],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 0,
+      "controller": "PRAXIS \u00b7 candidate v2",
+      "prompt": "Deliver two packages from Station A to Station C and Station D",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 36.0,
+        "distance": 35.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.259
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          14,
+          2
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          16,
+          2
+        ],
+        [
+          17,
+          2
+        ],
+        [
+          17,
+          3
+        ],
+        [
+          17,
+          4
+        ],
+        [
+          17,
+          5
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          17,
+          7
+        ],
+        [
+          17,
+          8
+        ],
+        [
+          17,
+          9
+        ],
+        [
+          17,
+          10
+        ],
+        [
+          17,
+          11
+        ],
+        [
+          17,
+          12
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.499622+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.499624+00:00",
+          "kind": "grounding",
+          "message": "6 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.499911+00:00",
+          "kind": "planning",
+          "message": "Route to A: 0 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.499914+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.499918+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.05,
+          "timestamp": "2026-10-26T21:49:21.499922+00:00",
+          "kind": "navigate",
+          "message": "Navigate at A",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.499930+00:00",
+          "kind": "pickup",
+          "message": "Pickup at A \u00b7 2 package(s)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.500145+00:00",
+          "kind": "planning",
+          "message": "Route to C: 25 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 8,
+          "time": 24.85,
+          "timestamp": "2026-10-26T21:49:21.501610+00:00",
+          "kind": "navigate",
+          "message": "Navigate at C",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 9,
+          "time": 25.45,
+          "timestamp": "2026-10-26T21:49:21.501621+00:00",
+          "kind": "deliver",
+          "message": "Deliver at C \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 10,
+          "time": 25.45,
+          "timestamp": "2026-10-26T21:49:21.501657+00:00",
+          "kind": "planning",
+          "message": "Route to D: 10 cells; A* with mandatory restricted zones",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 11,
+          "time": 35.4,
+          "timestamp": "2026-10-26T21:49:21.502038+00:00",
+          "kind": "navigate",
+          "message": "Navigate at D",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 12,
+          "time": 36.0,
+          "timestamp": "2026-10-26T21:49:21.502047+00:00",
+          "kind": "deliver",
+          "message": "Deliver at D \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 13,
+          "time": 36.0,
+          "timestamp": "2026-10-26T21:49:21.502051+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            17.0,
+            12.0
+          ]
+        }
+      ],
+      "obstacles": [],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 1,
+      "controller": "A \u00b7 static",
+      "prompt": "Deliver two packages from Station A to Station C and Station D",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 37.85,
+        "distance": 35.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.3
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          14,
+          2
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          16,
+          2
+        ],
+        [
+          17,
+          2
+        ],
+        [
+          17,
+          3
+        ],
+        [
+          17,
+          4
+        ],
+        [
+          17,
+          5
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          17,
+          7
+        ],
+        [
+          17,
+          8
+        ],
+        [
+          17,
+          9
+        ],
+        [
+          17,
+          10
+        ],
+        [
+          17,
+          11
+        ],
+        [
+          17,
+          12
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.502635+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.502638+00:00",
+          "kind": "grounding",
+          "message": "6 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.502924+00:00",
+          "kind": "planning",
+          "message": "Route to A: 0 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.502927+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.502933+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.05,
+          "timestamp": "2026-10-26T21:49:21.502938+00:00",
+          "kind": "navigate",
+          "message": "Navigate at A",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.502947+00:00",
+          "kind": "pickup",
+          "message": "Pickup at A \u00b7 2 package(s)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.503186+00:00",
+          "kind": "planning",
+          "message": "Route to C: 25 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 8,
+          "time": 26.4,
+          "timestamp": "2026-10-26T21:49:21.504699+00:00",
+          "kind": "navigate",
+          "message": "Navigate at C",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 9,
+          "time": 27.0,
+          "timestamp": "2026-10-26T21:49:21.504713+00:00",
+          "kind": "deliver",
+          "message": "Deliver at C \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 10,
+          "time": 27.0,
+          "timestamp": "2026-10-26T21:49:21.504766+00:00",
+          "kind": "planning",
+          "message": "Route to D: 10 cells; A* with mandatory restricted zones",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 11,
+          "time": 37.25,
+          "timestamp": "2026-10-26T21:49:21.505229+00:00",
+          "kind": "navigate",
+          "message": "Navigate at D",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 12,
+          "time": 37.85,
+          "timestamp": "2026-10-26T21:49:21.505238+00:00",
+          "kind": "deliver",
+          "message": "Deliver at D \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 13,
+          "time": 37.85,
+          "timestamp": "2026-10-26T21:49:21.505242+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            17.0,
+            12.0
+          ]
+        }
+      ],
+      "obstacles": [],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 1,
+      "controller": "B \u00b7 reactive",
+      "prompt": "Deliver two packages from Station A to Station C and Station D",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 37.85,
+        "distance": 35.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.415
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          14,
+          2
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          16,
+          2
+        ],
+        [
+          17,
+          2
+        ],
+        [
+          17,
+          3
+        ],
+        [
+          17,
+          4
+        ],
+        [
+          17,
+          5
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          17,
+          7
+        ],
+        [
+          17,
+          8
+        ],
+        [
+          17,
+          9
+        ],
+        [
+          17,
+          10
+        ],
+        [
+          17,
+          11
+        ],
+        [
+          17,
+          12
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.505283+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.505285+00:00",
+          "kind": "grounding",
+          "message": "6 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.505525+00:00",
+          "kind": "planning",
+          "message": "Route to A: 0 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.505527+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.505531+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.05,
+          "timestamp": "2026-10-26T21:49:21.505535+00:00",
+          "kind": "navigate",
+          "message": "Navigate at A",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.505542+00:00",
+          "kind": "pickup",
+          "message": "Pickup at A \u00b7 2 package(s)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.505918+00:00",
+          "kind": "planning",
+          "message": "Route to C: 25 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 8,
+          "time": 26.4,
+          "timestamp": "2026-10-26T21:49:21.506889+00:00",
+          "kind": "navigate",
+          "message": "Navigate at C",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 9,
+          "time": 27.0,
+          "timestamp": "2026-10-26T21:49:21.506898+00:00",
+          "kind": "deliver",
+          "message": "Deliver at C \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 10,
+          "time": 27.0,
+          "timestamp": "2026-10-26T21:49:21.506930+00:00",
+          "kind": "planning",
+          "message": "Route to D: 10 cells; A* with mandatory restricted zones",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 11,
+          "time": 37.25,
+          "timestamp": "2026-10-26T21:49:21.507336+00:00",
+          "kind": "navigate",
+          "message": "Navigate at D",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 12,
+          "time": 37.85,
+          "timestamp": "2026-10-26T21:49:21.507345+00:00",
+          "kind": "deliver",
+          "message": "Deliver at D \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 13,
+          "time": 37.85,
+          "timestamp": "2026-10-26T21:49:21.507349+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            17.0,
+            12.0
+          ]
+        }
+      ],
+      "obstacles": [],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 1,
+      "controller": "PRAXIS",
+      "prompt": "Deliver two packages from Station A to Station C and Station D",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 37.85,
+        "distance": 35.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.274
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          14,
+          2
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          16,
+          2
+        ],
+        [
+          17,
+          2
+        ],
+        [
+          17,
+          3
+        ],
+        [
+          17,
+          4
+        ],
+        [
+          17,
+          5
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          17,
+          7
+        ],
+        [
+          17,
+          8
+        ],
+        [
+          17,
+          9
+        ],
+        [
+          17,
+          10
+        ],
+        [
+          17,
+          11
+        ],
+        [
+          17,
+          12
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.507384+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.507387+00:00",
+          "kind": "grounding",
+          "message": "6 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.507853+00:00",
+          "kind": "planning",
+          "message": "Route to A: 0 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.507882+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.507888+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.05,
+          "timestamp": "2026-10-26T21:49:21.507892+00:00",
+          "kind": "navigate",
+          "message": "Navigate at A",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.507901+00:00",
+          "kind": "pickup",
+          "message": "Pickup at A \u00b7 2 package(s)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.508106+00:00",
+          "kind": "planning",
+          "message": "Route to C: 25 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 8,
+          "time": 26.4,
+          "timestamp": "2026-10-26T21:49:21.509519+00:00",
+          "kind": "navigate",
+          "message": "Navigate at C",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 9,
+          "time": 27.0,
+          "timestamp": "2026-10-26T21:49:21.509532+00:00",
+          "kind": "deliver",
+          "message": "Deliver at C \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 10,
+          "time": 27.0,
+          "timestamp": "2026-10-26T21:49:21.509567+00:00",
+          "kind": "planning",
+          "message": "Route to D: 10 cells; A* with mandatory restricted zones",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 11,
+          "time": 37.25,
+          "timestamp": "2026-10-26T21:49:21.510072+00:00",
+          "kind": "navigate",
+          "message": "Navigate at D",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 12,
+          "time": 37.85,
+          "timestamp": "2026-10-26T21:49:21.510082+00:00",
+          "kind": "deliver",
+          "message": "Deliver at D \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 13,
+          "time": 37.85,
+          "timestamp": "2026-10-26T21:49:21.510086+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            17.0,
+            12.0
+          ]
+        }
+      ],
+      "obstacles": [],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 1,
+      "controller": "PRAXIS \u00b7 candidate v2",
+      "prompt": "Deliver two packages from Station A to Station C and Station D",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 36.0,
+        "distance": 35.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.548
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          14,
+          2
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          16,
+          2
+        ],
+        [
+          17,
+          2
+        ],
+        [
+          17,
+          3
+        ],
+        [
+          17,
+          4
+        ],
+        [
+          17,
+          5
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          17,
+          7
+        ],
+        [
+          17,
+          8
+        ],
+        [
+          17,
+          9
+        ],
+        [
+          17,
+          10
+        ],
+        [
+          17,
+          11
+        ],
+        [
+          17,
+          12
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.510241+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.510246+00:00",
+          "kind": "grounding",
+          "message": "6 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.510550+00:00",
+          "kind": "planning",
+          "message": "Route to A: 0 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.510554+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.510558+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.05,
+          "timestamp": "2026-10-26T21:49:21.510562+00:00",
+          "kind": "navigate",
+          "message": "Navigate at A",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.510570+00:00",
+          "kind": "pickup",
+          "message": "Pickup at A \u00b7 2 package(s)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.511069+00:00",
+          "kind": "planning",
+          "message": "Route to C: 25 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 8,
+          "time": 24.85,
+          "timestamp": "2026-10-26T21:49:21.512451+00:00",
+          "kind": "navigate",
+          "message": "Navigate at C",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 9,
+          "time": 25.45,
+          "timestamp": "2026-10-26T21:49:21.512463+00:00",
+          "kind": "deliver",
+          "message": "Deliver at C \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 10,
+          "time": 25.45,
+          "timestamp": "2026-10-26T21:49:21.512500+00:00",
+          "kind": "planning",
+          "message": "Route to D: 10 cells; A* with mandatory restricted zones",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 11,
+          "time": 35.4,
+          "timestamp": "2026-10-26T21:49:21.512845+00:00",
+          "kind": "navigate",
+          "message": "Navigate at D",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 12,
+          "time": 36.0,
+          "timestamp": "2026-10-26T21:49:21.512852+00:00",
+          "kind": "deliver",
+          "message": "Deliver at D \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 13,
+          "time": 36.0,
+          "timestamp": "2026-10-26T21:49:21.512882+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            17.0,
+            12.0
+          ]
+        }
+      ],
+      "obstacles": [],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 2,
+      "controller": "A \u00b7 static",
+      "prompt": "Deliver two packages from Station A to Station C and Station D",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 37.85,
+        "distance": 35.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.272
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          14,
+          2
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          16,
+          2
+        ],
+        [
+          17,
+          2
+        ],
+        [
+          17,
+          3
+        ],
+        [
+          17,
+          4
+        ],
+        [
+          17,
+          5
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          17,
+          7
+        ],
+        [
+          17,
+          8
+        ],
+        [
+          17,
+          9
+        ],
+        [
+          17,
+          10
+        ],
+        [
+          17,
+          11
+        ],
+        [
+          17,
+          12
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.513485+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.513488+00:00",
+          "kind": "grounding",
+          "message": "6 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.513878+00:00",
+          "kind": "planning",
+          "message": "Route to A: 0 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.513883+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.513890+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.05,
+          "timestamp": "2026-10-26T21:49:21.513895+00:00",
+          "kind": "navigate",
+          "message": "Navigate at A",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.513903+00:00",
+          "kind": "pickup",
+          "message": "Pickup at A \u00b7 2 package(s)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.514111+00:00",
+          "kind": "planning",
+          "message": "Route to C: 25 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 8,
+          "time": 26.4,
+          "timestamp": "2026-10-26T21:49:21.515329+00:00",
+          "kind": "navigate",
+          "message": "Navigate at C",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 9,
+          "time": 27.0,
+          "timestamp": "2026-10-26T21:49:21.515341+00:00",
+          "kind": "deliver",
+          "message": "Deliver at C \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 10,
+          "time": 27.0,
+          "timestamp": "2026-10-26T21:49:21.515375+00:00",
+          "kind": "planning",
+          "message": "Route to D: 10 cells; A* with mandatory restricted zones",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 11,
+          "time": 37.25,
+          "timestamp": "2026-10-26T21:49:21.515815+00:00",
+          "kind": "navigate",
+          "message": "Navigate at D",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 12,
+          "time": 37.85,
+          "timestamp": "2026-10-26T21:49:21.515825+00:00",
+          "kind": "deliver",
+          "message": "Deliver at D \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 13,
+          "time": 37.85,
+          "timestamp": "2026-10-26T21:49:21.515829+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            17.0,
+            12.0
+          ]
+        }
+      ],
+      "obstacles": [],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 2,
+      "controller": "B \u00b7 reactive",
+      "prompt": "Deliver two packages from Station A to Station C and Station D",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 37.85,
+        "distance": 35.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.43
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          14,
+          2
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          16,
+          2
+        ],
+        [
+          17,
+          2
+        ],
+        [
+          17,
+          3
+        ],
+        [
+          17,
+          4
+        ],
+        [
+          17,
+          5
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          17,
+          7
+        ],
+        [
+          17,
+          8
+        ],
+        [
+          17,
+          9
+        ],
+        [
+          17,
+          10
+        ],
+        [
+          17,
+          11
+        ],
+        [
+          17,
+          12
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.515894+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.515898+00:00",
+          "kind": "grounding",
+          "message": "6 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.516145+00:00",
+          "kind": "planning",
+          "message": "Route to A: 0 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.516148+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.516152+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.05,
+          "timestamp": "2026-10-26T21:49:21.516156+00:00",
+          "kind": "navigate",
+          "message": "Navigate at A",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.516165+00:00",
+          "kind": "pickup",
+          "message": "Pickup at A \u00b7 2 package(s)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.516554+00:00",
+          "kind": "planning",
+          "message": "Route to C: 25 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 8,
+          "time": 26.4,
+          "timestamp": "2026-10-26T21:49:21.517642+00:00",
+          "kind": "navigate",
+          "message": "Navigate at C",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 9,
+          "time": 27.0,
+          "timestamp": "2026-10-26T21:49:21.517652+00:00",
+          "kind": "deliver",
+          "message": "Deliver at C \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 10,
+          "time": 27.0,
+          "timestamp": "2026-10-26T21:49:21.517685+00:00",
+          "kind": "planning",
+          "message": "Route to D: 10 cells; A* with mandatory restricted zones",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 11,
+          "time": 37.25,
+          "timestamp": "2026-10-26T21:49:21.518134+00:00",
+          "kind": "navigate",
+          "message": "Navigate at D",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 12,
+          "time": 37.85,
+          "timestamp": "2026-10-26T21:49:21.518142+00:00",
+          "kind": "deliver",
+          "message": "Deliver at D \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 13,
+          "time": 37.85,
+          "timestamp": "2026-10-26T21:49:21.518146+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            17.0,
+            12.0
+          ]
+        }
+      ],
+      "obstacles": [],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 2,
+      "controller": "PRAXIS",
+      "prompt": "Deliver two packages from Station A to Station C and Station D",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 37.85,
+        "distance": 35.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.268
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          14,
+          2
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          16,
+          2
+        ],
+        [
+          17,
+          2
+        ],
+        [
+          17,
+          3
+        ],
+        [
+          17,
+          4
+        ],
+        [
+          17,
+          5
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          17,
+          7
+        ],
+        [
+          17,
+          8
+        ],
+        [
+          17,
+          9
+        ],
+        [
+          17,
+          10
+        ],
+        [
+          17,
+          11
+        ],
+        [
+          17,
+          12
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.518313+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.518317+00:00",
+          "kind": "grounding",
+          "message": "6 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.518635+00:00",
+          "kind": "planning",
+          "message": "Route to A: 0 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.518638+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.518642+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.05,
+          "timestamp": "2026-10-26T21:49:21.518647+00:00",
+          "kind": "navigate",
+          "message": "Navigate at A",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.518654+00:00",
+          "kind": "pickup",
+          "message": "Pickup at A \u00b7 2 package(s)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.518878+00:00",
+          "kind": "planning",
+          "message": "Route to C: 25 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 8,
+          "time": 26.4,
+          "timestamp": "2026-10-26T21:49:21.520101+00:00",
+          "kind": "navigate",
+          "message": "Navigate at C",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 9,
+          "time": 27.0,
+          "timestamp": "2026-10-26T21:49:21.520112+00:00",
+          "kind": "deliver",
+          "message": "Deliver at C \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 10,
+          "time": 27.0,
+          "timestamp": "2026-10-26T21:49:21.520147+00:00",
+          "kind": "planning",
+          "message": "Route to D: 10 cells; A* with mandatory restricted zones",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 11,
+          "time": 37.25,
+          "timestamp": "2026-10-26T21:49:21.520503+00:00",
+          "kind": "navigate",
+          "message": "Navigate at D",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 12,
+          "time": 37.85,
+          "timestamp": "2026-10-26T21:49:21.520511+00:00",
+          "kind": "deliver",
+          "message": "Deliver at D \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 13,
+          "time": 37.85,
+          "timestamp": "2026-10-26T21:49:21.520515+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            17.0,
+            12.0
+          ]
+        }
+      ],
+      "obstacles": [],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 2,
+      "controller": "PRAXIS \u00b7 candidate v2",
+      "prompt": "Deliver two packages from Station A to Station C and Station D",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 36.0,
+        "distance": 35.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.263
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          14,
+          2
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          16,
+          2
+        ],
+        [
+          17,
+          2
+        ],
+        [
+          17,
+          3
+        ],
+        [
+          17,
+          4
+        ],
+        [
+          17,
+          5
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          17,
+          7
+        ],
+        [
+          17,
+          8
+        ],
+        [
+          17,
+          9
+        ],
+        [
+          17,
+          10
+        ],
+        [
+          17,
+          11
+        ],
+        [
+          17,
+          12
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.520554+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.520557+00:00",
+          "kind": "grounding",
+          "message": "6 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.520806+00:00",
+          "kind": "planning",
+          "message": "Route to A: 0 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.520809+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.520813+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.05,
+          "timestamp": "2026-10-26T21:49:21.520817+00:00",
+          "kind": "navigate",
+          "message": "Navigate at A",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.520824+00:00",
+          "kind": "pickup",
+          "message": "Pickup at A \u00b7 2 package(s)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.521048+00:00",
+          "kind": "planning",
+          "message": "Route to C: 25 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 8,
+          "time": 24.85,
+          "timestamp": "2026-10-26T21:49:21.522110+00:00",
+          "kind": "navigate",
+          "message": "Navigate at C",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 9,
+          "time": 25.45,
+          "timestamp": "2026-10-26T21:49:21.522119+00:00",
+          "kind": "deliver",
+          "message": "Deliver at C \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 10,
+          "time": 25.45,
+          "timestamp": "2026-10-26T21:49:21.522152+00:00",
+          "kind": "planning",
+          "message": "Route to D: 10 cells; A* with mandatory restricted zones",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 11,
+          "time": 35.4,
+          "timestamp": "2026-10-26T21:49:21.522487+00:00",
+          "kind": "navigate",
+          "message": "Navigate at D",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 12,
+          "time": 36.0,
+          "timestamp": "2026-10-26T21:49:21.522494+00:00",
+          "kind": "deliver",
+          "message": "Deliver at D \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 13,
+          "time": 36.0,
+          "timestamp": "2026-10-26T21:49:21.522498+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            17.0,
+            12.0
+          ]
+        }
+      ],
+      "obstacles": [],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 3,
+      "controller": "A \u00b7 static",
+      "prompt": "Deliver two packages from Station A to Station C and Station D",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 37.85,
+        "distance": 35.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.394
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          14,
+          2
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          16,
+          2
+        ],
+        [
+          17,
+          2
+        ],
+        [
+          17,
+          3
+        ],
+        [
+          17,
+          4
+        ],
+        [
+          17,
+          5
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          17,
+          7
+        ],
+        [
+          17,
+          8
+        ],
+        [
+          17,
+          9
+        ],
+        [
+          17,
+          10
+        ],
+        [
+          17,
+          11
+        ],
+        [
+          17,
+          12
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.522888+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.522891+00:00",
+          "kind": "grounding",
+          "message": "6 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.523152+00:00",
+          "kind": "planning",
+          "message": "Route to A: 0 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.523155+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.523162+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.05,
+          "timestamp": "2026-10-26T21:49:21.523165+00:00",
+          "kind": "navigate",
+          "message": "Navigate at A",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.523173+00:00",
+          "kind": "pickup",
+          "message": "Pickup at A \u00b7 2 package(s)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.523448+00:00",
+          "kind": "planning",
+          "message": "Route to C: 25 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 8,
+          "time": 26.4,
+          "timestamp": "2026-10-26T21:49:21.524725+00:00",
+          "kind": "navigate",
+          "message": "Navigate at C",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 9,
+          "time": 27.0,
+          "timestamp": "2026-10-26T21:49:21.524737+00:00",
+          "kind": "deliver",
+          "message": "Deliver at C \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 10,
+          "time": 27.0,
+          "timestamp": "2026-10-26T21:49:21.524847+00:00",
+          "kind": "planning",
+          "message": "Route to D: 10 cells; A* with mandatory restricted zones",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 11,
+          "time": 37.25,
+          "timestamp": "2026-10-26T21:49:21.525383+00:00",
+          "kind": "navigate",
+          "message": "Navigate at D",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 12,
+          "time": 37.85,
+          "timestamp": "2026-10-26T21:49:21.525393+00:00",
+          "kind": "deliver",
+          "message": "Deliver at D \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 13,
+          "time": 37.85,
+          "timestamp": "2026-10-26T21:49:21.525397+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            17.0,
+            12.0
+          ]
+        }
+      ],
+      "obstacles": [],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 3,
+      "controller": "B \u00b7 reactive",
+      "prompt": "Deliver two packages from Station A to Station C and Station D",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 37.85,
+        "distance": 35.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.465
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          14,
+          2
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          16,
+          2
+        ],
+        [
+          17,
+          2
+        ],
+        [
+          17,
+          3
+        ],
+        [
+          17,
+          4
+        ],
+        [
+          17,
+          5
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          17,
+          7
+        ],
+        [
+          17,
+          8
+        ],
+        [
+          17,
+          9
+        ],
+        [
+          17,
+          10
+        ],
+        [
+          17,
+          11
+        ],
+        [
+          17,
+          12
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.525441+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.525445+00:00",
+          "kind": "grounding",
+          "message": "6 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.525696+00:00",
+          "kind": "planning",
+          "message": "Route to A: 0 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.525698+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.525703+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.05,
+          "timestamp": "2026-10-26T21:49:21.525707+00:00",
+          "kind": "navigate",
+          "message": "Navigate at A",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.525714+00:00",
+          "kind": "pickup",
+          "message": "Pickup at A \u00b7 2 package(s)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.526136+00:00",
+          "kind": "planning",
+          "message": "Route to C: 25 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 8,
+          "time": 26.4,
+          "timestamp": "2026-10-26T21:49:21.527428+00:00",
+          "kind": "navigate",
+          "message": "Navigate at C",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 9,
+          "time": 27.0,
+          "timestamp": "2026-10-26T21:49:21.527493+00:00",
+          "kind": "deliver",
+          "message": "Deliver at C \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 10,
+          "time": 27.0,
+          "timestamp": "2026-10-26T21:49:21.527529+00:00",
+          "kind": "planning",
+          "message": "Route to D: 10 cells; A* with mandatory restricted zones",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 11,
+          "time": 37.25,
+          "timestamp": "2026-10-26T21:49:21.527908+00:00",
+          "kind": "navigate",
+          "message": "Navigate at D",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 12,
+          "time": 37.85,
+          "timestamp": "2026-10-26T21:49:21.527916+00:00",
+          "kind": "deliver",
+          "message": "Deliver at D \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 13,
+          "time": 37.85,
+          "timestamp": "2026-10-26T21:49:21.527921+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            17.0,
+            12.0
+          ]
+        }
+      ],
+      "obstacles": [],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 3,
+      "controller": "PRAXIS",
+      "prompt": "Deliver two packages from Station A to Station C and Station D",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 37.85,
+        "distance": 35.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.244
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          14,
+          2
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          16,
+          2
+        ],
+        [
+          17,
+          2
+        ],
+        [
+          17,
+          3
+        ],
+        [
+          17,
+          4
+        ],
+        [
+          17,
+          5
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          17,
+          7
+        ],
+        [
+          17,
+          8
+        ],
+        [
+          17,
+          9
+        ],
+        [
+          17,
+          10
+        ],
+        [
+          17,
+          11
+        ],
+        [
+          17,
+          12
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.527960+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.527963+00:00",
+          "kind": "grounding",
+          "message": "6 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.528423+00:00",
+          "kind": "planning",
+          "message": "Route to A: 0 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.528427+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.528432+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.05,
+          "timestamp": "2026-10-26T21:49:21.528437+00:00",
+          "kind": "navigate",
+          "message": "Navigate at A",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.528445+00:00",
+          "kind": "pickup",
+          "message": "Pickup at A \u00b7 2 package(s)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.528648+00:00",
+          "kind": "planning",
+          "message": "Route to C: 25 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 8,
+          "time": 26.4,
+          "timestamp": "2026-10-26T21:49:21.529579+00:00",
+          "kind": "navigate",
+          "message": "Navigate at C",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 9,
+          "time": 27.0,
+          "timestamp": "2026-10-26T21:49:21.529588+00:00",
+          "kind": "deliver",
+          "message": "Deliver at C \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 10,
+          "time": 27.0,
+          "timestamp": "2026-10-26T21:49:21.529620+00:00",
+          "kind": "planning",
+          "message": "Route to D: 10 cells; A* with mandatory restricted zones",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 11,
+          "time": 37.25,
+          "timestamp": "2026-10-26T21:49:21.530000+00:00",
+          "kind": "navigate",
+          "message": "Navigate at D",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 12,
+          "time": 37.85,
+          "timestamp": "2026-10-26T21:49:21.530008+00:00",
+          "kind": "deliver",
+          "message": "Deliver at D \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 13,
+          "time": 37.85,
+          "timestamp": "2026-10-26T21:49:21.530012+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            17.0,
+            12.0
+          ]
+        }
+      ],
+      "obstacles": [],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 3,
+      "controller": "PRAXIS \u00b7 candidate v2",
+      "prompt": "Deliver two packages from Station A to Station C and Station D",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 36.0,
+        "distance": 35.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.328
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          14,
+          2
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          16,
+          2
+        ],
+        [
+          17,
+          2
+        ],
+        [
+          17,
+          3
+        ],
+        [
+          17,
+          4
+        ],
+        [
+          17,
+          5
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          17,
+          7
+        ],
+        [
+          17,
+          8
+        ],
+        [
+          17,
+          9
+        ],
+        [
+          17,
+          10
+        ],
+        [
+          17,
+          11
+        ],
+        [
+          17,
+          12
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.530049+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.530052+00:00",
+          "kind": "grounding",
+          "message": "6 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.530294+00:00",
+          "kind": "planning",
+          "message": "Route to A: 0 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.530297+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.530301+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.05,
+          "timestamp": "2026-10-26T21:49:21.530304+00:00",
+          "kind": "navigate",
+          "message": "Navigate at A",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.530311+00:00",
+          "kind": "pickup",
+          "message": "Pickup at A \u00b7 2 package(s)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.530600+00:00",
+          "kind": "planning",
+          "message": "Route to C: 25 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 8,
+          "time": 24.85,
+          "timestamp": "2026-10-26T21:49:21.531893+00:00",
+          "kind": "navigate",
+          "message": "Navigate at C",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 9,
+          "time": 25.45,
+          "timestamp": "2026-10-26T21:49:21.531904+00:00",
+          "kind": "deliver",
+          "message": "Deliver at C \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 10,
+          "time": 25.45,
+          "timestamp": "2026-10-26T21:49:21.531937+00:00",
+          "kind": "planning",
+          "message": "Route to D: 10 cells; A* with mandatory restricted zones",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 11,
+          "time": 35.4,
+          "timestamp": "2026-10-26T21:49:21.532346+00:00",
+          "kind": "navigate",
+          "message": "Navigate at D",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 12,
+          "time": 36.0,
+          "timestamp": "2026-10-26T21:49:21.532355+00:00",
+          "kind": "deliver",
+          "message": "Deliver at D \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 13,
+          "time": 36.0,
+          "timestamp": "2026-10-26T21:49:21.532359+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            17.0,
+            12.0
+          ]
+        }
+      ],
+      "obstacles": [],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 4,
+      "controller": "A \u00b7 static",
+      "prompt": "Deliver two packages from Station A to Station C and Station D",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 37.85,
+        "distance": 35.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.455
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          14,
+          2
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          16,
+          2
+        ],
+        [
+          17,
+          2
+        ],
+        [
+          17,
+          3
+        ],
+        [
+          17,
+          4
+        ],
+        [
+          17,
+          5
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          17,
+          7
+        ],
+        [
+          17,
+          8
+        ],
+        [
+          17,
+          9
+        ],
+        [
+          17,
+          10
+        ],
+        [
+          17,
+          11
+        ],
+        [
+          17,
+          12
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.532739+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.532741+00:00",
+          "kind": "grounding",
+          "message": "6 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.533206+00:00",
+          "kind": "planning",
+          "message": "Route to A: 0 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.533210+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.533217+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.05,
+          "timestamp": "2026-10-26T21:49:21.533222+00:00",
+          "kind": "navigate",
+          "message": "Navigate at A",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.533230+00:00",
+          "kind": "pickup",
+          "message": "Pickup at A \u00b7 2 package(s)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.533642+00:00",
+          "kind": "planning",
+          "message": "Route to C: 25 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 8,
+          "time": 26.4,
+          "timestamp": "2026-10-26T21:49:21.534765+00:00",
+          "kind": "navigate",
+          "message": "Navigate at C",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 9,
+          "time": 27.0,
+          "timestamp": "2026-10-26T21:49:21.534776+00:00",
+          "kind": "deliver",
+          "message": "Deliver at C \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 10,
+          "time": 27.0,
+          "timestamp": "2026-10-26T21:49:21.534809+00:00",
+          "kind": "planning",
+          "message": "Route to D: 10 cells; A* with mandatory restricted zones",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 11,
+          "time": 37.25,
+          "timestamp": "2026-10-26T21:49:21.535201+00:00",
+          "kind": "navigate",
+          "message": "Navigate at D",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 12,
+          "time": 37.85,
+          "timestamp": "2026-10-26T21:49:21.535209+00:00",
+          "kind": "deliver",
+          "message": "Deliver at D \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 13,
+          "time": 37.85,
+          "timestamp": "2026-10-26T21:49:21.535213+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            17.0,
+            12.0
+          ]
+        }
+      ],
+      "obstacles": [],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 4,
+      "controller": "B \u00b7 reactive",
+      "prompt": "Deliver two packages from Station A to Station C and Station D",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 37.85,
+        "distance": 35.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.239
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          14,
+          2
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          16,
+          2
+        ],
+        [
+          17,
+          2
+        ],
+        [
+          17,
+          3
+        ],
+        [
+          17,
+          4
+        ],
+        [
+          17,
+          5
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          17,
+          7
+        ],
+        [
+          17,
+          8
+        ],
+        [
+          17,
+          9
+        ],
+        [
+          17,
+          10
+        ],
+        [
+          17,
+          11
+        ],
+        [
+          17,
+          12
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.535306+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.535310+00:00",
+          "kind": "grounding",
+          "message": "6 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.535545+00:00",
+          "kind": "planning",
+          "message": "Route to A: 0 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.535548+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.535552+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.05,
+          "timestamp": "2026-10-26T21:49:21.535556+00:00",
+          "kind": "navigate",
+          "message": "Navigate at A",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.535564+00:00",
+          "kind": "pickup",
+          "message": "Pickup at A \u00b7 2 package(s)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.535758+00:00",
+          "kind": "planning",
+          "message": "Route to C: 25 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 8,
+          "time": 26.4,
+          "timestamp": "2026-10-26T21:49:21.537045+00:00",
+          "kind": "navigate",
+          "message": "Navigate at C",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 9,
+          "time": 27.0,
+          "timestamp": "2026-10-26T21:49:21.537202+00:00",
+          "kind": "deliver",
+          "message": "Deliver at C \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 10,
+          "time": 27.0,
+          "timestamp": "2026-10-26T21:49:21.537244+00:00",
+          "kind": "planning",
+          "message": "Route to D: 10 cells; A* with mandatory restricted zones",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 11,
+          "time": 37.25,
+          "timestamp": "2026-10-26T21:49:21.537597+00:00",
+          "kind": "navigate",
+          "message": "Navigate at D",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 12,
+          "time": 37.85,
+          "timestamp": "2026-10-26T21:49:21.537604+00:00",
+          "kind": "deliver",
+          "message": "Deliver at D \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 13,
+          "time": 37.85,
+          "timestamp": "2026-10-26T21:49:21.537609+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            17.0,
+            12.0
+          ]
+        }
+      ],
+      "obstacles": [],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 4,
+      "controller": "PRAXIS",
+      "prompt": "Deliver two packages from Station A to Station C and Station D",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 37.85,
+        "distance": 35.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.245
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          14,
+          2
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          16,
+          2
+        ],
+        [
+          17,
+          2
+        ],
+        [
+          17,
+          3
+        ],
+        [
+          17,
+          4
+        ],
+        [
+          17,
+          5
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          17,
+          7
+        ],
+        [
+          17,
+          8
+        ],
+        [
+          17,
+          9
+        ],
+        [
+          17,
+          10
+        ],
+        [
+          17,
+          11
+        ],
+        [
+          17,
+          12
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.537654+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.537657+00:00",
+          "kind": "grounding",
+          "message": "6 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.537939+00:00",
+          "kind": "planning",
+          "message": "Route to A: 0 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.537943+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.537948+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.05,
+          "timestamp": "2026-10-26T21:49:21.537952+00:00",
+          "kind": "navigate",
+          "message": "Navigate at A",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.537960+00:00",
+          "kind": "pickup",
+          "message": "Pickup at A \u00b7 2 package(s)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.538164+00:00",
+          "kind": "planning",
+          "message": "Route to C: 25 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 8,
+          "time": 26.4,
+          "timestamp": "2026-10-26T21:49:21.539535+00:00",
+          "kind": "navigate",
+          "message": "Navigate at C",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 9,
+          "time": 27.0,
+          "timestamp": "2026-10-26T21:49:21.539546+00:00",
+          "kind": "deliver",
+          "message": "Deliver at C \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 10,
+          "time": 27.0,
+          "timestamp": "2026-10-26T21:49:21.539581+00:00",
+          "kind": "planning",
+          "message": "Route to D: 10 cells; A* with mandatory restricted zones",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 11,
+          "time": 37.25,
+          "timestamp": "2026-10-26T21:49:21.540241+00:00",
+          "kind": "navigate",
+          "message": "Navigate at D",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 12,
+          "time": 37.85,
+          "timestamp": "2026-10-26T21:49:21.540251+00:00",
+          "kind": "deliver",
+          "message": "Deliver at D \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 13,
+          "time": 37.85,
+          "timestamp": "2026-10-26T21:49:21.540256+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            17.0,
+            12.0
+          ]
+        }
+      ],
+      "obstacles": [],
+      "memory_reuses": 0
+    },
+    {
+      "trial": 4,
+      "controller": "PRAXIS \u00b7 candidate v2",
+      "prompt": "Deliver two packages from Station A to Station C and Station D",
+      "verified": true,
+      "failure": null,
+      "metrics": {
+        "time": 36.0,
+        "distance": 35.0,
+        "replans": 0,
+        "collisions": 0,
+        "prevented": 0,
+        "decision_ms": 0.239
+      },
+      "trace": [
+        [
+          2,
+          12
+        ],
+        [
+          2,
+          11
+        ],
+        [
+          2,
+          10
+        ],
+        [
+          2,
+          9
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          5,
+          6
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          6
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          9,
+          5
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          11,
+          5
+        ],
+        [
+          11,
+          4
+        ],
+        [
+          11,
+          3
+        ],
+        [
+          11,
+          2
+        ],
+        [
+          12,
+          2
+        ],
+        [
+          13,
+          2
+        ],
+        [
+          14,
+          2
+        ],
+        [
+          15,
+          2
+        ],
+        [
+          16,
+          2
+        ],
+        [
+          17,
+          2
+        ],
+        [
+          17,
+          3
+        ],
+        [
+          17,
+          4
+        ],
+        [
+          17,
+          5
+        ],
+        [
+          17,
+          6
+        ],
+        [
+          17,
+          7
+        ],
+        [
+          17,
+          8
+        ],
+        [
+          17,
+          9
+        ],
+        [
+          17,
+          10
+        ],
+        [
+          17,
+          11
+        ],
+        [
+          17,
+          12
+        ]
+      ],
+      "events": [
+        {
+          "seq": 0,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.540300+00:00",
+          "kind": "understanding",
+          "message": "LOCAL / constrained grammar (no AI inference)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 1,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.540304+00:00",
+          "kind": "grounding",
+          "message": "6 grounded actions in warehouse-v1",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 2,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.540549+00:00",
+          "kind": "planning",
+          "message": "Route to A: 0 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 3,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.540552+00:00",
+          "kind": "validation",
+          "message": "Plan preview ready. Collision and restricted-area checks are mandatory.",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 4,
+          "time": 0.0,
+          "timestamp": "2026-10-26T21:49:21.540557+00:00",
+          "kind": "execution",
+          "message": "Simulation started; fixed-step kinematic controller",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 5,
+          "time": 0.05,
+          "timestamp": "2026-10-26T21:49:21.540560+00:00",
+          "kind": "navigate",
+          "message": "Navigate at A",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 6,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.540567+00:00",
+          "kind": "pickup",
+          "message": "Pickup at A \u00b7 2 package(s)",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 7,
+          "time": 0.65,
+          "timestamp": "2026-10-26T21:49:21.540769+00:00",
+          "kind": "planning",
+          "message": "Route to C: 25 cells; A* with mandatory restricted zones",
+          "position": [
+            2.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 8,
+          "time": 24.85,
+          "timestamp": "2026-10-26T21:49:21.541649+00:00",
+          "kind": "navigate",
+          "message": "Navigate at C",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 9,
+          "time": 25.45,
+          "timestamp": "2026-10-26T21:49:21.541657+00:00",
+          "kind": "deliver",
+          "message": "Deliver at C \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 10,
+          "time": 25.45,
+          "timestamp": "2026-10-26T21:49:21.541689+00:00",
+          "kind": "planning",
+          "message": "Route to D: 10 cells; A* with mandatory restricted zones",
+          "position": [
+            17.0,
+            2.0
+          ]
+        },
+        {
+          "seq": 11,
+          "time": 35.4,
+          "timestamp": "2026-10-26T21:49:21.542053+00:00",
+          "kind": "navigate",
+          "message": "Navigate at D",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 12,
+          "time": 36.0,
+          "timestamp": "2026-10-26T21:49:21.542061+00:00",
+          "kind": "deliver",
+          "message": "Deliver at D \u00b7 1 package(s)",
+          "position": [
+            17.0,
+            12.0
+          ]
+        },
+        {
+          "seq": 13,
+          "time": 36.0,
+          "timestamp": "2026-10-26T21:49:21.542065+00:00",
+          "kind": "verification",
+          "message": "PASS: final station, action completion, delivery quantities and collision invariants verified",
+          "position": [
+            17.0,
+            12.0
+          ]
+        }
+      ],
+      "obstacles": [],
+      "memory_reuses": 0
+    }
+  ],
+  "summary": [
+    {
+      "controller": "A \u00b7 static",
+      "success_rate": 1,
+      "time": 37.85,
+      "distance": 35.0,
+      "replans": 0,
+      "collisions": 0,
+      "prevented": 0,
+      "decision_ms": 0.345,
+      "memory_reuses": 0
+    },
+    {
+      "controller": "B \u00b7 reactive",
+      "success_rate": 1,
+      "time": 37.85,
+      "distance": 35.0,
+      "replans": 0,
+      "collisions": 0,
+      "prevented": 0,
+      "decision_ms": 0.355,
+      "memory_reuses": 0
+    },
+    {
+      "controller": "PRAXIS",
+      "success_rate": 1,
+      "time": 37.85,
+      "distance": 35.0,
+      "replans": 0,
+      "collisions": 0,
+      "prevented": 0,
+      "decision_ms": 0.259,
+      "memory_reuses": 0
+    },
+    {
+      "controller": "PRAXIS \u00b7 candidate v2",
+      "success_rate": 1,
+      "time": 36.0,
+      "distance": 35.0,
+      "replans": 0,
+      "collisions": 0,
+      "prevented": 0,
+      "decision_ms": 0.327,
+      "memory_reuses": 0
+    }
+  ],
+  "candidate_retained": true,
+  "retention_reason": "Retain only if all trials verify, zero collisions, no success regression and lower mean simulation time.",
+  "wall_ms": 49.55,
+  "scope": "Synthetic kinematic warehouse trials; not ASPIRE or real robot benchmarks."
+}

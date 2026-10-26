@@ -1,0 +1,53 @@
+name: Verify PRAXIS
+on: [push, pull_request]
+jobs:
+  local-workflow:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: pip install -r backend/requirements.txt
+      - run: python -m pytest -q
+        working-directory: backend
+        env:
+          DATABASE_URL: sqlite:////tmp/praxis-ci.db
+      - run: npm ci
+        working-directory: frontend
+      - run: npm test && npm run build
+        working-directory: frontend
+      - run: npx playwright install --with-deps chromium
+        working-directory: frontend
+      - name: Browser workflow
+        env:
+          DATABASE_URL: sqlite:////tmp/praxis-ci-e2e.db
+        run: |
+          python -m uvicorn app.main:app --app-dir backend --host 127.0.0.1 --port 8000 --timeout-graceful-shutdown 2 > /tmp/praxis-api.log 2>&1 &
+          API_PID=$!
+          (cd frontend && exec node node_modules/vite/bin/vite.js --host 127.0.0.1 --port 5173 --strictPort) > /tmp/praxis-ui.log 2>&1 &
+          UI_PID=$!
+          trap 'kill "$API_PID" "$UI_PID" 2>/dev/null || true' EXIT
+          python - <<'PY'
+          import time, urllib.request
+          for _ in range(60):
+              try:
+                  urllib.request.urlopen('http://127.0.0.1:5173/api/health', timeout=2)
+                  break
+              except Exception:
+                  time.sleep(.5)
+          else:
+              raise RuntimeError('Services did not become ready')
+          PY
+          cd frontend
+          npm run test:e2e
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: browser-evidence
+          path: frontend/test-results/
